@@ -1,13 +1,86 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  color: #343a40;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.todo-container {
+  width: 100%;
+ 
+}
+.todo-container input{
+  width: 10%;
+}
+h1 {
+  text-align: center;
+  color: #495057;
+  margin-bottom: 20px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+li.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+li.completed:nth-child(odd) {
+  background-color: #d4edda;
+}
+li.completed:nth-child(even) {
+  background-color: #fff3cd;
+}
+input[type="checkbox"] {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+}
+#new-task {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+button {
+  width: 20%;
+  padding: 10px;
+  background-color: #fff3cd;
+  color: #495057;;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+button:hover {
+  background-color: #d4edda;
+}
+input{
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
